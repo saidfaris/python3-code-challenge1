@@ -1,26 +1,29 @@
-# python3-code-challenge1
 # Coding Challenges
 
-This repository contains Python solutions to three coding challenges. Each challenge is explained below along with its corresponding Python function.
+This repository contains solutions to three coding challenges. Each challenge focuses on solving a specific problem using Python. Below is a brief description of each challenge:
 
 ## Challenge 1: 12-hour to 24-hour Time Conversion
 
-### Function: `convert`
+### Problem Description:
+Convert a 12-hour time format (e.g., "8:30 am" or "8:30 pm") to a 24-hour time format (e.g., "0830" or "2030"). The input includes an hour (1 to 12), minutes (0 to 59), and a period ("am" or "pm").
 
-This function takes a string representing a time in 12-hour format (e.g., "01:58:42PM") and converts it to 24-hour format (e.g., "1358"). It handles special cases like midnight (12:00 AM) and noon (12:00 PM).
+### Solution:
+A Python function is provided (`convert`) that takes the input time and performs the conversion. It accounts for special cases like midnight (12:00 AM) and noon (12:00 PM). The function returns a four-digit string representing the time in 24-hour format.
 
-#### Example Usage:
+## Challenge 2: Exactly Two Positive Numbers
 
-```python
-time = "08:30:42PM"
-print("12-hour Format time:", time)
-print("24-hour Format time:", convert(time))
+### Problem Description:
+Given three integers (a, b, c), determine whether exactly two of them are positive numbers (greater than zero). Return `True` if this condition is met, otherwise return `False`.
 
+### Solution:
+A Python function (`exactly_two_positive`) checks the positivity of the three integers and returns `True` if exactly two of them are positive. It returns `False` otherwise. Several test cases are provided to validate the function's correctness.
 
-Function: exactly_two_positive
-This function takes three integers (a, b, and c) as input and returns True if exactly two of them are positive numbers (greater than zero), and False otherwise.
+## Challenge 3: Consonant Value
 
-This function takes a lowercase string containing alphabetic characters only (no spaces) and calculates the highest value of consonant substrings based on the provided mapping (a = 1, b = 2, c = 3, ..., z = 26). Consonants are any letters of the alphabet except "aeiou."
+### Problem Description:
+Given a lowercase string containing only alphabetic characters (no spaces), find the highest value of consonant substrings. Consonants are defined as any letters of the alphabet except for "aeiou." Each consonant is assigned a specific value (a = 1, b = 2, c = 3, ..., z = 26).
 
+### Solution:
+A Python function (`solve`) calculates the highest value of consonant substrings within the input string. It first removes vowels from the string and then calculates the value of each consonant substring. The function returns the highest calculated value.
 
-
+---
